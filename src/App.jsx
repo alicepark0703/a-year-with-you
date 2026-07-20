@@ -4,12 +4,10 @@ import "./App.css";
 const PASSWORD = "happybdanushroom";
 
 const photos = [
-  { file: "/photos/halloweekend.jpg", caption: "halloweekend 🎃", tall: false },
-  { file: "/photos/early-bd.jpg",     caption: "early BD party 🎂", tall: true },
-  { file: "/photos/first-month.jpg",  caption: "first month 🏠",   tall: false },
-  { file: "/photos/slope-day.jpg",    caption: "slope day ⛷️",     tall: false },
-  { file: "/photos/lock-in.jpg",      caption: "the lock in 🔒",   tall: false },
-];
+  { file: "photos/early-bd.jpg",  caption: "early BD party 🎂", tall: true },
+  { file: "photos/slope-day.jpg", caption: "slope day ⛷️",     tall: false },
+  { file: "photos/lock-in.jpg",   caption: "the lock in 🔒",   tall: false },
+].map(p => ({ ...p, file: import.meta.env.BASE_URL + p.file }));
 
 export default function App() {
   const [input, setInput] = useState("");
@@ -72,7 +70,7 @@ function InnerPage() {
 
       <div className="inner-header">
         <div className="tag">happy birthday 🎂</div>
-        <h1>a whole year<br />with <em>you</em></h1>
+        <h1>to my<br /><em>best friend</em></h1>
         <p>for my favorite roommate 🌸</p>
       </div>
 
