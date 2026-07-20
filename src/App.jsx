@@ -87,7 +87,12 @@ function InnerPage() {
         <div className="letter-card">
           <div className="quote-mark">"</div>
           <p className="letter-text">
-            ✷ this is where your letter to Anusha goes — just open <code>App.jsx</code> and replace this text inside the <code>letter-text</code> paragraph with whatever you want to say. the box will grow automatically as you write more. 🌸
+             Dear Anusha,
+             Happy 20th Birthday!!! I hope you have the most amazing day ever~!!!!
+             I am so glad that we became roommates and shared so many wonderful and sometimes stressful moments together!!
+             I really made it out of Sophomore year because of you, and I hope I could give you a bit of joy and share some postiivity during our year together!!
+             hope your twenties gets even more exciting and beautiful!!
+             I am so excited to live together next year and make more memories to cheris :))🌸
           </p>
           <div className="letter-sign">from your best roommate, Alice ✿</div>
         </div>
